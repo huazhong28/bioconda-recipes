@@ -10,7 +10,8 @@ source:
   sha256: d6a9baacddba8e9508336c5adff15a8a482774c724fc0710392fed7bb9ad1e8b
 
 build:
-  number: 0
+  number: 1
+  skip: True
   # v1.3.0 breaks Bifrost Index File (.bfi) compatibility with previous Bifrost versions
   run_exports:
     - {{ pin_subpackage('bifrost', max_pin="x.x") }}
@@ -42,3 +43,5 @@ about:
 extra:
    identifiers:
      - doi:10.1101/695338
+  additional-platforms:
+    - linux-aarch64
