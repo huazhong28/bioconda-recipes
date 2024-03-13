@@ -10,7 +10,10 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 4
+  number: 5
+  run_exports:
+    - {{ pin_subpackage(akt, max_pin=x.x.x) }}  
+  skip: True
 
 requirements:
   build:
@@ -38,3 +41,5 @@ about:
 extra:
   identifiers:
     - doi:10.1093/bioinformatics/btw576
+  additional-platforms:
+    - linux-aarch64
