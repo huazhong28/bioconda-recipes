@@ -3,7 +3,7 @@ package:
   version: "1.03"
 
 build:
-  number: 7
+  number: 8
   run_exports:
     - {{ pin_subpackage(alder, max_pin=x.x.x) }}  
 
