@@ -9,12 +9,13 @@ source:
   url: https://github.com/sc932/ALE/archive/{{ version }}.tar.gz
   sha256: '{{ sha256 }}'
 
-  run_exports:
-    - {{ pin_subpackage(ale, max_pin=x.x.x) }}  
+
 build:
   number: 2
   skip: true  # [py3k]
-
+  run_exports:
+    - {{ pin_subpackage(ale, max_pin=x.x.x) }}  
+    
 requirements:
   build:
     - make
