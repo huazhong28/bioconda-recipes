@@ -14,7 +14,7 @@ source:
     - paths.patch
 
 build:
-  number: 6
+  number: 7
   run_exports:
     - {{ pin_subpackage(bicseq2-norm, max_pin=x.x.x) }}  
   skip: True
