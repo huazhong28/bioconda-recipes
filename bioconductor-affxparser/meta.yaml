@@ -13,8 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: 2b6b9373d749a0ccbf930f834df90b92
 build:
-  number: 2
-  skip: True
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -46,5 +45,3 @@ extra:
     path: recipes/bioconductor-affxparser
     version: 1.52.0
 
-  additional-platforms:
-    - linux-aarch64
