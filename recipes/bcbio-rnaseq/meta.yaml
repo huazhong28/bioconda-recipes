@@ -7,7 +7,7 @@ source:
   md5: e3f150f45026af6d7513b16094bd54e9
 
 build:
-  number: 5
+  number: 6
   run_exports:
     - {{ pin_subpackage(bcbio-rnaseq, max_pin=x.x.x) }}  
   skip: True #[osx]
