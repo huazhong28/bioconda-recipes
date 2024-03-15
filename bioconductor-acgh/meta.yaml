@@ -13,8 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 137af76dc5756a83094da18eb0bededa
 build:
-  number: 2
-  skip: True
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -56,5 +55,3 @@ extra:
     path: recipes/bioconductor-acgh
     version: 1.58.0
 
-  additional-platforms:
-    - linux-aarch64
