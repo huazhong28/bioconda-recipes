@@ -12,7 +12,7 @@ source:
     md5: bbe8e249c655a276657c6602524f7e39 # [linux]
 
 build:
-  number: 1
+  number: 2
   skip: True
   run_exports:
     - {{ pin_subpackage(name, max_pin="x.x") }}
