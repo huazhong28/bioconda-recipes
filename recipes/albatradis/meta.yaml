@@ -9,7 +9,7 @@ source:
   sha256: b637ed73b810e610b9da8eb8a9f7289b2e1b53f297bd4071dac9b8995d097a39
 
 build:
-  number: 5
+  number: 6
   run_exports:
     - {{ pin_subpackage(albatradis, max_pin=x.x.x) }}  
   skip: True  # [py<30 or osx]
