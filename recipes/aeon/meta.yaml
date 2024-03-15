@@ -11,7 +11,7 @@ source:
 
 build:
   skip: true  # [py < 39]
-  number: 3
+  number: 4
   run_exports:
     - {{ pin_subpackage(aeon, max_pin=x.x.x) }}  
 
